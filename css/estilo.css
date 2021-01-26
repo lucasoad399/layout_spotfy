@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+html,body,header{
+  height: 100%;
+  overflow-x: hidden;
+}
+body{
+  background: url(../imagens/capa.png),
+              url(../imagens/ruido.png),
+              linear-gradient(50deg,#ff4169, #7c26f8);
+              background-attachment: fixed;
+}
+
+/*Formatação Nav*/
+nav{
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(255,255,255);
+    border-color: rgba(255,255,255,1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+nav div.barrinha{
+  font-size: 1.4em; font-weight: 100;
+}
+
+/*Formatação seção inicial*/
+.para-todos{
+
+  font-weight: bolder;
+  letter-spacing: -0.04em;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ac38ce;
+    border-color: #ac38ce;
+}
+
+.btn-primary:hover{
+  background-color: #810aa3;
+  border-color: #810aa3;
+}
+.btn-redondo{
+  border-radius: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-font{
+  font-size: 1em;
+}
+
+
+/*Serviços*/
+
+#servicos img{
+  width: 250px;
+}
+
+#servicos .roxo{
+  color: #8D12CA !important;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+#servicos h1{
+  color: #8D12CA !important;
+  font-weight: bolder;
+}
+/*recursos*/
+#recursos{
+  color: white;
+  font-size: 1.1em;
+}
+
+#recursos h3{
+  font-size: 2em;
+  margin-top: 10px;
+  color: #9bf0e1;
+  font-weight: bolder;
+}
+.roda-cel{
+  transform: rotate(30deg);
+  position: relative;
+  z-index: 10;
+
+}
+
+/*Rodapé*/
+
+footer{
+  width: 100%;
+  background: black;
+  color: white;
+  position: relative;
+  z-index: 20;
+}
+
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (max-width: 575.98px) {
+  .para-todos{
+    font-size: 2em;
+    letter-spacing: -0.08;
+  }
+  #servicos .roxo{
+
+    font-size: 1.8em;
+  }
+
+  #servicos h1{
+    font-size: 2em;
+  }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com menos de 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .para-todos{
+    font-size: 3.5em;
+  }
+  #servicos .roxo{
+
+    font-size: 2em;
+  }
+  #servicos h1{
+    font-size: 2.1em;
+  }
+}
+
+/* Dispositivos médios (tablets com menos de 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .para-todos{
+    font-size: 4.5em;
+  }
+  #servicos .roxo{
+
+    font-size: 2em;
+  }
+  #servicos h1{
+    font-size: 2.1em;
+  }
+}
+
+/* Dispositivos large (desktops com menos de 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .para-todos{
+    font-size: 5em;
+  }
+  #servicos .roxo{
+
+    font-size: 2em;
+  }
+  #servicos h1{
+    font-size: 2.9em;
+  }
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+  .para-todos{
+    font-size:5em
+  }
+  #servicos .roxo{
+
+    font-size: 2em;
+  }
+  #servicos h1{
+    font-size: 3.5em;
+  }
+ }
